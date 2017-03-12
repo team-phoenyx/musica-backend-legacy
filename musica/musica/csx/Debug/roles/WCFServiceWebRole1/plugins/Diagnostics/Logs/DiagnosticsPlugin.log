@@ -1,0 +1,81 @@
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] Starting DiagnosticPlugin.exe DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5
+DiagnosticsPlugin.exe Error: 0 : [1/15/2017 2:45:38 PM] Failed to save IIS Directory state
+DiagnosticsPlugin.exe Error: 0 : [1/15/2017 2:45:38 PM] System.UnauthorizedAccessException: Filename: redirection.config
+Error: Cannot read configuration file due to insufficient permissions
+
+
+   at Microsoft.Web.Administration.Interop.AppHostWritableAdminManager.GetAdminSection(String bstrSectionName, String bstrSectionPath)
+   at Microsoft.Web.Administration.Configuration.GetSectionInternal(ConfigurationSection section, String sectionPath, String locationPath)
+   at Microsoft.Web.Administration.ServerManager.SitesSectionCreator()
+   at Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   at Microsoft.Web.Administration.ServerManager.SitesCollectionCreator()
+   at Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   at Microsoft.Azure.Plugins.Plugin.DiagnosticsPluginManager.SaveIISDirectoryState()
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] Starting DiagnosticsPlugin
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] Emulator config file set to C:\Users\yabra_000\Documents\GitHub\musica\musica\musica\csx\Debug\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] DiagnosticsStoreRootPath set to: C:\Users\yabra_000\AppData\Local\dftmp\Resources\03722d6a-52d3-4478-acf1-ea47702baad6
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] Loading config file: C:\Users\yabra_000\Documents\GitHub\musica\musica\musica\csx\Debug\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] Config file to read: C:\Users\yabra_000\Documents\GitHub\musica\musica\musica\csx\Debug\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] Checking VM Type
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] Emulator config file set to C:\Users\yabra_000\Documents\GitHub\musica\musica\musica\csx\Debug\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] Extension set to Emulator Mode
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] Reading XML configuration file
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] Bypassing private config decryption
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] WadCfg is provided in initial configuration. Using that to initialize Diagnostics.
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] <PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
+  <WadCfg>
+    <DiagnosticMonitorConfiguration overallQuotaInMB="4096">
+      <DiagnosticInfrastructureLogs scheduledTransferLogLevelFilter="Error" />
+      <Logs scheduledTransferPeriod="PT1M" scheduledTransferLogLevelFilter="Error" />
+      <Directories scheduledTransferPeriod="PT1M">
+        <IISLogs containerName="wad-iis-logfiles" />
+        <FailedRequestLogs containerName="wad-failedrequestlogs" />
+      </Directories>
+      <WindowsEventLog scheduledTransferPeriod="PT1M">
+        <DataSource name="Application!*[System[(Level=1 or Level=2 or Level=3)]]" />
+        <DataSource name="Windows Azure!*[System[(Level=1 or Level=2 or Level=3 or Level=4)]]" />
+      </WindowsEventLog>
+      <CrashDumps containerName="wad-crashdumps" dumpType="Mini">
+        <CrashDumpConfiguration processName="WaIISHost.exe" />
+        <CrashDumpConfiguration processName="WaWorkerHost.exe" />
+        <CrashDumpConfiguration processName="w3wp.exe" />
+      </CrashDumps>
+      <PerformanceCounters scheduledTransferPeriod="PT1M">
+        <PerformanceCounterConfiguration counterSpecifier="\Memory\Available MBytes" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Web Service(_Total)\ISAPI Extension Requests/sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Web Service(_Total)\Bytes Total/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Requests/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Errors Total/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Requests Queued" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Requests Rejected" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Processor(_Total)\% Processor Time" sampleRate="PT3M" />
+      </PerformanceCounters>
+    </DiagnosticMonitorConfiguration>
+  </WadCfg>
+  <StorageAccount>devstoreaccount1</StorageAccount>
+</PublicConfig>
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] Private setting is loaded
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] Is config json/xml loaded
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:38 PM] Checking if configuration needs to be fetched from the storage account and doing so if needed.
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:39 PM] Successfully created checkpoint file C:\Users\yabra_000\AppData\Local\dftmp\Resources\03722d6a-52d3-4478-acf1-ea47702baad6\WAD0105\Configuration\Checkpoint.txt
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:39 PM] Will use local resource directory C:\Users\yabra_000\AppData\Local\dftmp\Resources\03722d6a-52d3-4478-acf1-ea47702baad6\WAD0105
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:39 PM] Will use endpoint https://core.windows.net for storage.
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:40 PM] Exception in creating the ServerManager; is IIS installed?
+ Error:System.UnauthorizedAccessException: Filename: redirection.config
+Error: Cannot read configuration file due to insufficient permissions
+
+
+   at Microsoft.Web.Administration.Interop.AppHostWritableAdminManager.GetAdminSection(String bstrSectionName, String bstrSectionPath)
+   at Microsoft.Web.Administration.Configuration.GetSectionInternal(ConfigurationSection section, String sectionPath, String locationPath)
+   at Microsoft.Web.Administration.ServerManager.SitesSectionCreator()
+   at Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   at Microsoft.Web.Administration.ServerManager.SitesCollectionCreator()
+   at Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   at Microsoft.Azure.Plugins.Plugin.WadConfigProcessor.AddDirectories(EventsType mdsEvents, Directories wadDirectories)
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:40 PM] Running in emulator mode, crash dumps not enabled
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:40 PM] Checking to see if Application Insights extension needs to be configured.
+DiagnosticsPlugin.exe Information: 0 : [1/15/2017 2:45:40 PM] In emulator mode and using devstore updating XStoreAccount info, command line args: -LocalPath "C:\Users\yabra_000\AppData\Local\dftmp\Resources\03722d6a-52d3-4478-acf1-ea47702baad6\WAD0105"  -ConfigFile "C:\Users\yabra_000\AppData\Local\dftmp\Resources\03722d6a-52d3-4478-acf1-ea47702baad6\WAD0105\Configuration\MaConfig.xml" -ShutDownEvent WADDM-ShutDown-36b9ff9d18eb4ce5a84b6e87ccf0f5d1  -TotalShutDownEvent WADDM-TotalShutDown-36b9ff9d18eb4ce5a84b6e87ccf0f5d1 -InitializedEvent WADM-StartUp-36b9ff9d18eb4ce5a84b6e87ccf0f5d1 -parent 8504 -events -wadVer1v5 -UseProxyServer -XStoreAccounts WadAccount#true#devstoreaccount1#Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000
+DiagnosticsPlugin.exe Error: 0 : [1/15/2017 2:46:11 PM] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   at Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)

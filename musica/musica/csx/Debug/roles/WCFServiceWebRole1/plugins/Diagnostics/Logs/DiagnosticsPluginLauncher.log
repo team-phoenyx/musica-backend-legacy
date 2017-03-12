@@ -1,0 +1,15 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [1/15/2017 2:45:36 PM] Emulator config file set to C:\Users\yabra_000\Documents\GitHub\musica\musica\musica\csx\Debug\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [1/15/2017 2:45:36 PM] DiagnosticsStoreRootPath set to: C:\Users\yabra_000\AppData\Local\dftmp\Resources\03722d6a-52d3-4478-acf1-ea47702baad6
+DiagnosticsPluginLauncher.exe Information: 0 : [1/15/2017 2:45:36 PM] Loading config file: C:\Users\yabra_000\Documents\GitHub\musica\musica\musica\csx\Debug\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [1/15/2017 2:45:36 PM] Config file to read: C:\Users\yabra_000\Documents\GitHub\musica\musica\musica\csx\Debug\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [1/15/2017 2:45:36 PM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [1/15/2017 2:45:36 PM] Emulator config file set to C:\Users\yabra_000\Documents\GitHub\musica\musica\musica\csx\Debug\roles\WCFServiceWebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [1/15/2017 2:45:36 PM] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [1/15/2017 2:45:36 PM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [1/15/2017 2:45:36 PM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [1/15/2017 2:45:36 PM] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [1/15/2017 2:45:37 PM] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [1/15/2017 2:45:37 PM] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [1/15/2017 2:45:37 PM] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [1/15/2017 2:45:37 PM] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [1/15/2017 2:45:37 PM] Resetting DiagnosticPlugin
