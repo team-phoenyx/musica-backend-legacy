@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="musica" generation="1" functional="0" release="0" Id="cc26ac96-8691-4d4c-b7a7-b9c347018fee" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="musica" generation="1" functional="0" release="0" Id="f083a9db-2552-48b5-b8b1-ddce13c1e634" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="musicaGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -42,7 +42,7 @@
       </maps>
       <components>
         <groupHascomponents>
-          <role name="WCFServiceWebRole1" generation="1" functional="0" release="0" software="C:\Users\yabra_000\Documents\GitHub\musica\musica\musica\csx\Release\roles\WCFServiceWebRole1" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
+          <role name="WCFServiceWebRole1" generation="1" functional="0" release="0" software="C:\Users\yabra_000\Documents\Bitbucket\musica-backend\musica\musica\csx\Release\roles\WCFServiceWebRole1" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
             <componentports>
               <inPort name="Endpoint1" protocol="http" portRanges="80" />
             </componentports>
@@ -70,9 +70,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="2ff6b3c4-21d8-4e23-a3a8-8fc729f3d01e" ref="Microsoft.RedDog.Contract\ServiceContract\musicaContract@ServiceDefinition">
+    <implementation Id="0425e510-3e59-48bb-9985-d68ce22600e7" ref="Microsoft.RedDog.Contract\ServiceContract\musicaContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="a731a678-d7e2-4d6a-b63f-375ed029cfe6" ref="Microsoft.RedDog.Contract\Interface\WCFServiceWebRole1:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="1beef607-c190-4555-9153-3f192b2aab94" ref="Microsoft.RedDog.Contract\Interface\WCFServiceWebRole1:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/musica/musicaGroup/WCFServiceWebRole1:Endpoint1" />
           </inPort>

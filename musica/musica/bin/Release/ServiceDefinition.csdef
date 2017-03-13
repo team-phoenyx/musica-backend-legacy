@@ -25,7 +25,7 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\yabra_000\Documents\GitHub\musica\musica\musica\rcf\Release\WCFServiceWebRole1Content\" />
+        <SourceDirectory path="C:\Users\yabra_000\Documents\Bitbucket\musica-backend\musica\musica\rcf\Release\WCFServiceWebRole1Content\" />
       </Content>
     </Contents>
   </WebRole>
